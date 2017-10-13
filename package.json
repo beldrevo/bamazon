@@ -1,0 +1,22 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "node application for retrieving database information",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beldrevo/bamazon.git"
+  },
+  "author": "pavel_murator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beldrevo/bamazon/issues"
+  },
+  "homepage": "https://github.com/beldrevo/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  }
+}
