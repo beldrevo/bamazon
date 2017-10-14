@@ -39,7 +39,7 @@ function userQuery() {
 			}
 		])
 		.then(function(answer){
-			let query = "SELECT stock_quantity FROM products WHERE id =" + answer.id;
+			let query = "SELECT stock_quantity, product_sales FROM products WHERE id =" + answer.id;
 			connection.query(query, function(error, response) {
 				if (answer.quantity <= response[0].stock_quantity) {
 						let query = "SELECT price FROM products WHERE ?";
@@ -47,22 +47,25 @@ function userQuery() {
 							console.log("Your total is: $" + (response[0].price * answer.quantity));
 						})
 						connection.query("UPDATE products SET ? WHERE ?", 
-							[{
-								stock_quantity: response[0].stock_quantity - answer.quantity
-							  },
-							  {
-							  	id: answer.id
-							  }
-							],
-							function(error, response) {
-								console.log("quantity was update");
-							}
+						[
+						  {
+							stock_quantity: response[0].stock_quantity - answer.quantity
+						  },
+						  {
+						  	id: answer.id
+						  },
+						],
+						  function(error, response) {
+							// console.log("quantity was update");
+						  }
+						
 						);
 				}
 				else {
 					console.log("Insufficient quantity! There're only " + response[0].stock_quantity + " left.");
-					connection.end();
+					
 				}
+				connection.end();
 			})
 		})
 }

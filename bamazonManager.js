@@ -126,7 +126,7 @@ function addInv() {
 					  }
 					],
 					function(error, response) {
-						console.log(response);
+						// console.log(response);
 						console.log(response.affectedRows + " product quantity updated!\n");
 						nextStep();
 					}
@@ -170,8 +170,8 @@ function addNew() {
 			},
 			function(error, response) {
 				if (error) throw error;
-				console.log(response);
-				// console.log("product inserted!\n");
+				// console.log(response);
+				console.log("product inserted!\n");
 				nextStep();
 			})
 		});
