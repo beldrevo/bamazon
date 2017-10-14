@@ -2,7 +2,7 @@
 
 ## Bamazon is a back end CLI application built on JavaScript. It allows interract with sql database through the CLI chosing Customer, Manager or Supervisor mode.
 
-You can use [this link] (https://docs.google.com/presentation/d/1aQXVM0rTNVn2oxEOfi2w8RtwnBDXJE1yIaAGUOmGMGw/edit?usp=sharing) to see presentation how it works.
+You can use this link https://docs.google.com/presentation/d/1aQXVM0rTNVn2oxEOfi2w8RtwnBDXJE1yIaAGUOmGMGw/edit?usp=sharing to see presentation how it works.
 
 ## Instructions:
 
