@@ -4,6 +4,7 @@
   "description": "node application for retrieving database information",
   "main": "bamazonCustomer.js",
   "scripts": {
+    "mysql": "mysql -u 'root' < schema.sql",
     "test": "test"
   },
   "repository": {
