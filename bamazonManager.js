@@ -91,9 +91,11 @@ function viewInv() {
 		for (var i = 0; i < response.length; i++) {
 			if (response[i].stock_quantity < 5) {
 				console.log("\n" + JSON.stringify(response[i], null, 4));
-			}
+			} 
 		}
-		console.log("nothing less than 5");
+		if (response.length == 0) {
+				console.log("nothing less than 5");
+		}
 		nextStep();
 	})
 }
