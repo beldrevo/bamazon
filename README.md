@@ -2,7 +2,7 @@
 
 #### Technologies/tools used: JavaScript, MySQL, Inquirer
 
-Best Buy CLI app is a back end command line interface application built on JavaScript. It allows interract with sql database in 3 different modes: Customer, Manager or Supervisor mode.
+Best Buy CLI app is a back end command line interface application built with JavaScript. It allows interact with sql database in 3 different modes: Customer, Manager or Supervisor.
 
 ### Instructions:
 
